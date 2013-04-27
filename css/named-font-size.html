@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using named font sizes</title>
+</head>
+<body>
+<h1>Using named font sizes</h1>
+<section><h2>Applicability</h2>
+<p>CSS</p>
+<p>This technique relates to:</p>
+<ul>
+	<li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">Success Criterion 1.4.4 (Resize text)</a>
+		<ul>
+			<li><a href="http://www.w3.org/WAI/WCAG20/quickref/20120103/#visual-audio-contrast-scale">How to Meet 1.4.4 (Resize text)</a></li>
+			<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-scale.html">Understanding Success Criterion 1.4.4 (Resize text)</a></li>
+		</ul>
+	</li>
+<li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-presentation">Success Criterion 1.4.5 (Images of Text)</a>
+	<ul>
+		<li><a href="http://www.w3.org/WAI/WCAG20/quickref/20120103/#visual-audio-contrast-text-presentation">How to Meet 1.4.5 (Images of Text)</a></li>
+		<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-text-presentation.html">Understanding Success Criterion 1.4.5 (Images of Text)</a></li>
+	</ul>
+</li>
+<li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">Success Criterion 1.4.8 (Visual Presentation)</a>
+	<ul>
+		<li><a href="http://www.w3.org/WAI/WCAG20/quickref/20120103/#visual-audio-contrast-visual-presentation">How to Meet 1.4.8 (Visual Presentation)</a></li>
+		<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-visual-presentation.html">Understanding Success Criterion 1.4.8 (Visual Presentation)</a></li>
+	</ul>
+</li>
+<li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-images">Success Criterion 1.4.9 (Images of Text (No Exception))</a>
+	<ul>
+		<li><a href="http://www.w3.org/WAI/WCAG20/quickref/20120103/#visual-audio-contrast-text-images">How to Meet 1.4.9 (Images of Text (No Exception))</a></li>
+		<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-text-images.html">Understanding Success Criterion 1.4.9 (Images of Text (No Exception))</a></li>
+	</ul>
+</li>
+</ul>
+</section>
+<section><h2>User Agent and Assistive Technology Support Notes</h2>
+<p>When font size is given in absolute units of measurement, such as points or pixels, the Text Size menu commands in Internet Explorer 7 and earlier do not resize the text.</p>
+</section>
+<section><h2>Description</h2>
+<p>The objective of this technique is to specify a named font size that expresses the relative font size desired. These values provide hints so that the user agent can choose a font-size relative to the inherited font-size.</p>
+</section>
+<section><h2>Examples</h2>
+<section><h3>Example 1: Named font sizes in CSS</h3>
+<div class="example">
+<p>This example selects a larger font size for <code>strong</code> elements so that their text will always be larger than the surrounding text, in whatever context they are used. Assuming that headings and paragraphs use different font sizes, the emphasized words in this example will each be larger than their surrounding text.</p>
+</div>
+<div class="code">
+<p><strong>Example Code:</strong></p>
+<pre><code>
+strong {font-size: larger}
+
+...
+
+&lt;h1&gt;Letting the &lt;strong&gt;user&lt;/strong&gt; control text size&lt;/h1&gt;
+&lt;p&gt;Since only the user can know what size text works for him, 
+it is &lt;strong&gt;very&lt;/strong&gt; important to let him configure the text size.  
+…</code></pre>
+</div>
+</section>
+</section>
+<section><h2>Resources</h2>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+<ul>
+	<li><a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a></li>
+	<li><a href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</a></li>
+</ul>
+</section>
+<section><h2>Related Techniques</h2>
+<ul>
+	<li><a href="percentage-font-size.html">Using percent for font sizes</a></li>
+	<li><a href="em-font-size.html">Using em units for font sizes</a></li>
+</ul>
+</section>
+<section><h2>Tests</h2>
+<section><h3>Procedure</h3>
+<ol>
+	<li>Check that the value of the CSS property that defines the font size is one of <code>xx-small</code>, <code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, <code>xx-large</code>, <code>xsmaller</code>, or <code>larger</code>.</li>
+</ol>
+</section>
+<section><h3>Expected Results</h3>
+<ul>
+	<li>Check #1 is true</li>
+</ul>
+</section>
+</section>
+</body>
+</html>
