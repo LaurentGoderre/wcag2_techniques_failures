@@ -1,0 +1,31 @@
+body{
+	font-family: sans-serif;
+	font-size: 0.9em
+}
+
+h1 {
+	color: #005A9C;
+}
+
+h2{
+	border-bottom: thin solid #666666;
+}
+
+h3 {
+    font-style: italic;
+	font-weight: normal;
+}
+
+.code {
+	background-color:#F9F5DE;
+	color: #000066;
+	border-color: #000066;
+	border-style: solid;
+	border-width: 1px 1px 1px 6px;
+	display: block;
+	line-height: 120%;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	padding: 1em;
+	width: 95%;
+}
