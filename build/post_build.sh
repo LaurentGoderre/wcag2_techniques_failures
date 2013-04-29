@@ -21,7 +21,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
 		echo -e "Updating working examples...\n"
 
 		git checkout -B gh-pages
-		git commit -q -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
 		git push -fq examples gh-pages 2> /dev/null || error_exit "Error updating working examples"
 
 		echo -e "Finished updating the working examples\n"
