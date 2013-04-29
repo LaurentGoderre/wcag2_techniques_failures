@@ -14,7 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
 	git config --global user.name "Travis"
 
 	#Set remotes
-	git remote add examples https://${GH_TOKEN}@github.com/LaurentGoderre/wet-boew.git 2> /dev/null > /dev/null
+	git remote add examples https://${GH_TOKEN}@github.com/LaurentGoderre/wcag2_techniques_failures.git 2> /dev/null > /dev/null
 	
 	#Update working example
 	if [ "$TRAVIS_BRANCH" == "master" ]; then
