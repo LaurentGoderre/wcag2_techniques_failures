@@ -1,0 +1,12 @@
+language: java
+
+env:
+  global:
+    - secure: "YZNOzc0aNO8nglzTX1p+qn/YFPZdbB13HFwxX3mxKIZ8Wru2/DAGgIs4y6jM\n6U/MVZraVKk4InHuOWPre88Kkgpzmh61rdmJnL6THZ+fj3hQk1A60KnwQVm8\nihzrdxadeD8RjXtFfKCaEFWSshtm9G4SeEL8Zpbq74LtbCyXWRk="
+
+branches:
+  except:
+    - gh-pages
+
+script:
+  - ./build/post_build.sh
