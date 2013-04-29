@@ -8,7 +8,7 @@ function error_exit
 	exit 1
 }
 
-if [ "$TRAVIS_PULL_REQUEST" == "false" ]  then
+if [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
 	#Set git user
 	git config --global user.email "laurent.goderre@gmail.com"
 	git config --global user.name "Travis"
